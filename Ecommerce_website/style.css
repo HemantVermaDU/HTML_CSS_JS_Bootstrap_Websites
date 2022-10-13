@@ -1,0 +1,507 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+*{
+	padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+ 
+:root{
+    --primary-color:#A82C48;
+    
+}
+ body{
+    font-size: 100%;
+    font-weight: 400;
+     font-family: 'Poppins', sans-serif;
+ }
+ h1{
+    color: var(--primary-color);
+    text-transform: uppercase;
+ }
+h2{
+     color: var(--primary-color);
+}
+.logo{
+    width: 100%;
+    height: 1.5rem;
+}
+
+/* Home */
+.carousel-inner{
+    margin-top: 2.8rem;
+}
+ 
+.top-banner .home-banner-1,
+.top-banner .home-banner-2,
+.top-banner .home-banner-3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 450px;
+    position: relative;
+}
+.top-banner .home-banner-1{
+ background-image: url('images/slide1.jpg');
+}
+.top-banner .home-banner-2{
+ background-image: url('images/slide2.png');
+}
+.top-banner .home-banner-3{
+ background-image: url('images/slider3.png');
+} 
+.top-banner .home-banner .home-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-110%, -50%);
+}
+.top-banner .home-banner .home-banner-text h1{
+    font-size: 4.5rem;
+}
+.top-banner .carousel-indicators [data-bs-target]{
+    background-color:var(--primary-color);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+ .top-banner .carousel-control-prev-icon,
+  .top-banner .carousel-control-next-icon{
+  background: transparent;
+}
+ 
+/* whyshop */
+.whyshop-section .card_why{
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    height:15rem;
+    padding: 20px;
+    margin:20px 0 30px;
+}
+.whyshop-section .card_why img{
+    margin: 10px;
+}
+.whyshop-section .card_why h1{
+    font-weight: 600;
+}
+.whyshop-section .card_why h3{
+    font-weight: 400;
+   text-transform: uppercase;
+}
+.heading h1{
+  display: inline-block;
+  position: relative;
+}
+.heading h1:after {
+  content: "";
+  height: 3px;
+  width: 40%;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -.5em;
+  left: 50%;
+  transform: translate(-50%);
+}
+.whyshop-section .card_why p{
+   color:white ;
+
+}
+/* offers */
+.off_img{
+    padding-top: 2rem;
+}
+.discount_images .offer-box .offers-image::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(255, 255, 255, .0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: -webkit-linear-gradient(to right,rgba(255, 255, 255, .0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+}
+
+ .discount_images .offer-box .offers-image img{
+    transform: scale(1.02);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+.discount_images .offer-box:hover .offers-image::before{
+    animation: effect_shine 1s;
+}
+@keyframes effect_shine{
+    100%{
+        left: 150%;
+    }
+}
+.discount_images .offer-overlay::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.discount_images .offer-box .offers-info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all 250ms ease-out;
+    justify-content: center;
+    align-items: center;
+}
+.discount_images .offer-box .offers-info .heading-bigger{
+    font-size: 4.75rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0;
+
+}
+.discount_images .offer-box .offers-info .offer-title-1{
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+/* trending  */
+.model img{
+    height: 30rem;
+}
+.trend-text h3{
+    font-size: 1rem;
+
+}
+.trend-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.trend-text btn{
+
+}
+
+/* end trending */
+
+
+
+
+/* end whyshop */
+ 
+ .navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+ }
+  .navigation-wrap{
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  }
+ 
+a:hover{
+    color:var(--primary-color) !important;
+  }
+.heading{
+  text-decoration: underline;
+}
+.number{
+    border: 2px solid var(--primary-color);
+}
+
+p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.55rem;
+    text-align: justify;
+}
+img{
+    max-width:100%;
+}
+span{
+    padding: 10px;
+    margin: auto;
+}
+  
+.btn{
+    background-color:var(--primary-color) !important;
+    border: none;
+}
+ 
+.check{
+    color: var(--primary-color);
+}
+ 
+.box-Item{
+    padding: 20px;
+    margin-top: 10px;
+    width: 255px;
+    height: 260px;
+}
+/* food section */
+.product-section{
+    margin: 10px;
+    padding: 10px;
+}
+.product-section .card{
+    background-color: transparent;
+    border-radius: 0.9375rem;
+    border:1px solid rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.7);
+    padding-bottom: 1rem;
+}
+.product-section .card img{
+    border-radius:0.9375rem;
+    object-fit: cover;
+}
+.product-section .card i{
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    color:rgba(0, 0, 0, 0.4) ;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+}
+.product-section .card i:hover{
+    color: var(--primary-color);
+     border: 1px solid var(--primary-color);
+     cursor: pointer;
+}
+ .product-section .card h4{
+   color: var(--primary-color);
+   font-weight: 700;
+}
+.product-section .card span price{
+   color: var(--primary-color);
+    margin-left: 0.5rem;
+    font-size: 2rem;
+}
+.product-section .card span del{
+    color: gray;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+.card{
+  overflow: hidden;
+}
+.card:hover img{
+  transform: scale(1.1);
+}
+
+.product-section .ratings-stars .checked{
+    color: var(--primary-color);
+    font-size: 20px;
+
+}
+/* best offers */
+.Best-offers{
+    background: #EFEFEF;
+}
+.Best-offers .heading h1{
+       margin-top:10px;
+}
+.Best-offers-text h3{
+    font-size: 3rem;
+
+} 
+.Best-offers-img img{
+   height: 25rem;
+   margin-bottom: 20px;
+   filter: drop-shadow(7px 7px 7px #222);
+}
+/* Testimonial */
+ 
+.testimonial-section{
+   
+    margin: 20px;
+   
+}
+ .text-muted{
+    color:var(--primary-color) !important;
+ }
+ .carousel-item{
+    margin-top: 15px;
+     margin-bottom: 10px;
+ }
+/* faq section */
+ .faqn{
+    display: inline;
+    border-bottom: 3px solid  var(--primary-color);
+ }
+    /* back image */
+ .back-image-section{
+    width: 100%;
+    background: url('images/lg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 10px;
+    padding: 4.375rem 0;
+
+ }
+ .back-image-section .back-image-text .img-text{
+    font-size: 60px;
+    color: #fff !important;
+ }
+  .back-image-section .back-image-text h3{
+    color:var(--primary-color);
+ }
+ /* News section */
+ .input{
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    text-align: center;
+    height: 40px;
+    width: 20rem;
+    margin: 10px;
+ }
+ .news-section{
+    height: 300px;
+ }
+ .news_sec h2{
+    margin-top: 100px;
+ }
+ /* footer */
+ .footer-section{
+    background:var(--primary-color);
+ }
+ .footer-section .footer-link{
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1rem;
+    text-decoration: none;
+ }
+ .footer-section .footer-link:hover{
+    color: #fff !important;
+ }
+.footer-section h3{
+    font-weight: 700;
+}
+ .footer-first i{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.5rem;
+}
+ .footer-section a i{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 0.5rem;
+ }
+ .footer-copy i{
+    
+     color: red;
+  }
+  .footer-copy a{
+    text-decoration: none;
+     color: #fff;
+  }
+   .footer-copy a:hover{
+   color: #fff !important;
+  }
+  .fa:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:575px) {
+  .top-banner .home-banner-1,
+.top-banner .home-banner-2,
+.top-banner .home-banner-3{
+    background-position: 50% center;
+    min-height: 250px;
+}
+.top-banner .home-banner .home-banner-text{
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.top-banner .home-banner .home-banner-text h1{
+    font-size: 2.5rem;
+}
+  .story-section{
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .subs, .input{
+    width: 100%;
+    margin: 2px;
+  }
+
+   .discount_images .offer-box .offers-info .heading-bigger{
+    font-size: 4rem;
+    text-align: center;
+}
+.discount_images .offer-box .offers-info .offer-title-1{
+    text-align: center;
+}
+
+.Best-offers-text h3{
+    font-size: 2rem;
+} 
+.Best-offers .heading h1{
+  margin-bottom:15px;
+}
+.Best-offers-img img{
+   margin-top: 10px;
+
+}
+.product-section .card i{
+    right: 15px;
+    top: 20px;
+}
+.trend-text h3{
+    margin-top: 10px;
+}
+.model img{
+    height: 20rem;
+}
+  }
+
+  @media (max-width:991px) {
+   .discount_images .offer-box .offers-info .heading-bigger{
+    font-size: 4rem;
+    text-align: center;
+}
+.discount_images .offer-box .offers-info .offer-title-1{
+    text-align: center;
+}
+
+
+}
+
+@media (max-width:767px) {
+       .discount_images .offer-box .offers-info .heading-bigger{
+    font-size: 4rem;
+    text-align: center;
+}
+.discount_images .offer-box .offers-info .offer-title-1{
+    text-align: center;
+}
+}
+
+@media (max-width:1199px) {
+       .discount_images .offer-box .offers-info .heading-bigger{
+    font-size: 3rem;
+    text-align: center;
+}
+.discount_images .offer-box .offers-info .offer-title-1{
+    text-align: center;
+}
+}
